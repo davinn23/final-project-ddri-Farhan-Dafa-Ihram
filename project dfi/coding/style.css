@@ -1,0 +1,394 @@
+
+
+/*home*/
+nav {
+    position: fixed;
+
+}
+
+.div-home {
+    background: linear-gradient(to right, rgb(255, 168, 97), rgb(255, 255, 255)); 
+    background-size: cover; 
+    background-position: right; 
+    background-repeat: no-repeat; 
+    height: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+  }
+  /*home*/
+
+  /*payment*/
+.payment-container {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: grey;
+    left: 0;
+}
+
+.container-payment {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(50, 49, 49);
+    text-align: center;
+    width: 100;
+}
+
+h1 {
+    color: black;
+}
+
+form>div {
+    margin: 10px 0;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+
+}
+
+button {
+    all: unset;
+  }
+  
+  .button {
+    position: relative;
+    display: inline-flex;
+    height: 3.5rem;
+    align-items: center;
+    border-radius: 9999px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: Segoe UI;
+    font-size: 1.2rem;
+    font-weight: 640;
+    color: #fafaf6;
+    letter-spacing: -0.06em;
+  }
+  
+  .button-item {
+    background-color: transparent;
+    color: #1d1d1f;
+  }
+  
+  .button-item .button-bg {
+    border-color: rgba(255, 208, 116);
+    background-color: rgba(255, 208, 116);
+  }
+  
+  .button-inner,
+  .button-inner-hover,
+  .button-inner-static {
+    pointer-events: none;
+    display: block;
+  }
+  
+  .button-inner {
+    position: relative;
+  }
+  
+  .button-inner-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  
+  .button-bg {
+    overflow: hidden;
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .button-bg,
+  .button-bg-layer,
+  .button-bg-layers {
+    display: block;
+  }
+  
+  .button-bg-layers {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -60%;
+    aspect-ratio: 1 / 1;
+    width: max(200%, 10rem);
+  }
+  
+  .button-bg-layer {
+    border-radius: 9999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+  }
+  
+  .button-bg-layer.-purple {
+    background-color: rgba(163, 116, 255);
+  }
+  
+  .button-bg-layer.-turquoise {
+    background-color: rgba(23, 241, 209);
+  }
+  
+  .button-bg-layer.-yellow {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 208, 116, var(--tw-bg-opacity));
+  }
+  
+  .button:hover .button-inner-static {
+    opacity: 0;
+    transform: translateY(-70%);
+    transition:
+      transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
+      opacity 0.3s linear;
+  }
+  
+  .button:hover .button-inner-hover {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
+      opacity 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .button:hover .button-bg-layer {
+    transition:
+      transform 1.3s cubic-bezier(0.19, 1, 0.22, 1),
+      opacity 0.3s linear;
+  }
+  
+  .button:hover .button-bg-layer-1 {
+    transform: scale(1);
+  }
+  
+  .button:hover .button-bg-layer-2 {
+    transition-delay: 0.1s;
+    transform: scale(1);
+  }
+  
+  .button:hover .button-bg-layer-3 {
+    transition-delay: 0.2s;
+    transform: scale(1);
+  }
+  
+.button-inner-hover {
+    text-align: center;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: rgb(113, 7, 7);
+}
+/*payment*/
+.pay-container {
+    width: 1200px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+
+}
+
+svg {
+    width: 30px;
+    height: 60px;
+    fill: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .icon-cart {
+    position: relative;
+    color: white;
+}
+
+header .icon-cart span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+
+body.showcart .carttab {
+    inset: 0 0 0 auto;
+}
+
+body.showcart .pay-container {
+    transform: translate(-250px);
+}
+
+.carttab {
+    width: 400px;
+    background-color: rgb(52, 26, 26);
+    color: white;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: transform .5s;
+}
+
+.carttab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.paybtn {
+    display: flex;
+    grid-template-columns: (2, 1fr);
+}
+
+.carttab .paybtn button{
+    background-color: yellow;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.carttab .paybtn .tutup {
+    background-color: gray;
+    width: 50%;
+}
+
+.carttab .paybtn .co {
+    width: 50%;
+}
+
+.carttab .listcart .item img {
+    width: 100%;
+}
+
+.carttab .listcart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listcart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: rgb(48, 25, 25);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listcart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: white;
+}
+.listcart .item:nth-child(even) {
+    background-color: rgb(74, 37, 37);
+}
+
+.listcart {
+    overflow: auto;
+}
+
+
+/*gitar*/
+
+.gitar-container {
+    background-image:url('bcgitar.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 170vh;
+}
+
+.pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+/*paul*/
+.item {
+    color: rgb(54, 53, 51);
+    background-color: azure;
+    border: 1px solid rgb(78, 76, 76);
+    border-radius: 25px;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin: 15px 0;
+
+}
+
+.item:hover {
+    box-shadow: 10px 10px 15px rgb(100, 99, 99);
+    transition: opacity 0.3s ease;
+}
+
+.pro-img {
+    height: 225px;
+    width: 175px;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+
+.pro-btn {
+    background-color: rgb(48, 23, 23);
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    width: 175px;
+    align-items: center;
+
+}
+
+
+
+.drum-container {
+    background-image:url('joey.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 170vh;
+}
+
+.amplifier-container {
+    background-image:url('ampli.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 170vh;
+}
